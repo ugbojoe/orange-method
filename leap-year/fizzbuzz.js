@@ -1,4 +1,4 @@
-function fizzBuzz(n) {
+exports.fizzBuzz = function(n) {
   if (n % 21 === 0) {
     return 'FizzBuzz';
   }
@@ -13,10 +13,10 @@ function fizzBuzz(n) {
   }
 }
 
-function playFizzBuzz(min, max) {
-  for (var i=min; i<=max; i++) {
-    console.log(fizzBuzz(i));
-  }
-}
-
-playFizzBuzz(1, 100);
+// function playFizzBuzz(min, max) {
+//   for (var i=min; i<=max; i++) {
+//     console.log(fizzBuzz(i));
+//   }
+// }
+//
+// playFizzBuzz(1, 100);

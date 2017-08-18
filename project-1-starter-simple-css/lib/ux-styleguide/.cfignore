@@ -1,0 +1,14 @@
+bower_components
+node_modules
+/dist/
+/src/
+/typings/
+*.manifest.yml
+*.zip
+*.tar.gz
+*.d.ts
+.vscode
+tsd.json
+typings.json
+jsconfig.json
+/examples/

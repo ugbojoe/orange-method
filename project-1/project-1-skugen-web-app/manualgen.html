@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project 1 - Sku Data Generation</title>
+    <link rel="stylesheet" href="lib/ux-styleguide/dist/ux-styleguide.min.css">
+    <link href="https://pages.github.homedepot.com/ux/uxicon/uxicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script async src="main.js"></script>
+  </head>
+  <body onload="initApp();">
+    <header class="header">
+      <div class="header-logo">
+          <i class="icon_homedepot"></i>
+      </div>
+      <div class="header-info">
+          <label class="product-info">Dummy Data Generator</label>
+          <label class="user-info">Client Name | Dept #00 | City, State</label>
+      </div>
+      <div class="header-search">
+
+      </div>
+      <div class="header-actions">
+        <div><i class="icon_file-upload"></i>Import</div>
+        <div><i class="icon_file-download"></i>Export</div>
+        <div><i class="icon_print"></i>Print</div>
+      </div>
+    </header>
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <h1>Manual Sku Generation</h1>
+
+    <main class="content">
+<!-- Left Navigation and Content -->
+<section class="content-area">
+  <!-- Side Navigation -->
+  <div class="navigation-wrapper">
+      <div class="sidenav scrollable">
+          <ul class="nav">
+              <li><a href="index.html"><i class="icon_nav_dashboard"></i>Home</a></li>
+              <li><a href="autogen.html"><i class="icon_nav_esvs"></i>Auto Generation</a></li>
+              <li><a href="manualgen.html"><i class="icon_nav_quote_center"></i>Manual Generation</a></li>
+
+          </ul>
+      </div>
+          <div class="text-input-container">
+
+            <input id="sku-input"
+               type="text"
+               placeholder="enter sku #"
+               onkeypress="return addSku(event)" />
+              <label for="Sku Quantity">Manual Sku Entry</label>
+              <ol id="sku"></ol>
+          </div>
+
+          </div>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>

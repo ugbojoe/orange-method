@@ -1,0 +1,122 @@
+@import url("https://pages.github.homedepot.com/ux/ux-styleguide/dist/ux-styleguide.min.css");
+
+
+html {
+  background-image:url("images/home-depot-logo-gray-bgd.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*overflow-y: scroll;*/
+}
+/*hollygrail layout*/
+header, footer {
+	padding: 5px;
+}
+section {
+	display: flex;
+  flex-wrap: wrap;
+	width: 100%;
+}
+article {
+	order: 2;
+	flex: 3;
+}
+nav {
+	order: 1;
+	flex: 1;
+}
+aside {
+  order: 3;
+	flex: 1;
+  height: 50vh;
+  /*display: flex;*/
+  overflow-y: scroll;
+}
+article, nav, aside {
+	padding: 1em;
+}
+body {
+	padding: 10em;
+  /*overflow-y: auto;*/
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+p {
+  text-indent: 10px;
+}
+label {
+    cursor: default;
+}
+.skuworkflow {
+  margin: auto;
+  width: 325%;
+  height: 200%;
+  padding-top: 5%;
+}
+.autosplashimg {
+  background-position: center;
+  margin: auto;
+  width: 325%;
+  height: 200%;
+  padding-top: 5%;
+  opacity: 0.15;
+}
+.manualsplashimg {
+  background-position: center;
+  margin: auto;
+  width: 325%;
+  height: 200%;
+  padding-top: 5%;
+  opacity: 0.15;
+}
+/**/
+.simple-flex {
+  width: 1000px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+    /*-moz-box-sizing: border-box;
+         box-sizing: border-box;*/
+}
+/*Adding Blank Space Between Lines*/
+div:empty {
+  height: 1em;
+  line-height: 1em;
+}
+/*drop menu*/
+.select-container select {
+  -webkit-transition: all 0.30s ease-in-out;
+  /*-moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;*/
+  outline: none;
+  border: 1px solid #cccccc;
+  background-color: #f96302;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  width: 30%;
+  margin-top: 22px;
+  min-height: 46px;}
+/*input text box*/
+  input {
+    outline: none;
+    box-sizing: border-box; }
+
+  .text-input-container input:not([type]),
+  .text-input-container input[type=text],
+  .text-input-container input[type=number] {
+    -webkit-transition: all 0.30s ease-in-out;
+    /*-moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;*/
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: #fbfbfb;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444444;
+    width: 20%;
+    margin-top: 22px;
+    min-height: 46px;
+  }

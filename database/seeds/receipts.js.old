@@ -1,0 +1,27 @@
+
+exports.seed = function(knex, Promise) {
+  // Deletes ALL existing entries
+  return knex('receipts').del()
+    .then(function () {
+      // Inserts seed entries
+      return knex('receipts').insert([
+        {store_id: 5, item: 'PS4', number_of_items: 1, price: 400, buy_date: 'January 21 2014'},
+        {store_id: 6, item: 'XBox One', number_of_items: 1, price: 500, buy_date: 'January 21 2014'},
+        {store_id: 6, item: 'TMNT Collectors Set', number_of_items: 1, price: 25, buy_date: 'January 21 2014'},
+        {store_id: 5, item: 'Lego Set', number_of_items: 1, price: 40, buy_date: 'January 21 2014'},
+        {store_id: 1, item: 'Blood Meridian', number_of_items: 3, price: 12, buy_date: 'March 21 2014'},
+        {store_id: 1, item: 'Ham on Rye', number_of_items: 2, price: 12, buy_date: 'March 21 2014'},
+        {store_id: 3, item: 'The Last Tycoon', number_of_items: 1, price: 14, buy_date: 'March 21 2014'},
+        {store_id: 4, item: 'Button Down Shirt', number_of_items: 3, price: 28.50, buy_date: 'March 22 2014'},
+        {store_id: 2, item: 'Nikes', number_of_items: 1, price: 100, buy_date: 'March 23 2014'},
+        {store_id: 2, item: 'tube socks', number_of_items: 3, price: 28, buy_date: 'March 23 2014'},
+        {store_id: 2, item: 'Reeboks', number_of_items: 1, price: 60, buy_date: 'March 23 2014'},
+        {store_id: 2, item: 'Umbrella, Red', number_of_items: 1, price: 10.50, buy_date: 'March 23 2014'},
+        {store_id: 2, item: 'Boxer Shorts', number_of_items: 3, price: 20.75, buy_date: 'March 23 2014'},
+        {store_id: 2, item: 'TMNT bedspread', number_of_items: 1, price: 20, buy_date: 'March 23 2014'},
+        {store_id: 5, item: 'Packers Jersey', number_of_items: 1, price: 50, buy_date: 'March 24 2014'},
+        {store_id: 6, item: 'Life', number_of_items: 1, price: 25, buy_date: 'March 24 2014'},
+        {store_id: 5, item: 'laptop bag', number_of_items: 19, price: 40.50, buy_date: 'March 24 2014'}
+      ]);
+    });
+};

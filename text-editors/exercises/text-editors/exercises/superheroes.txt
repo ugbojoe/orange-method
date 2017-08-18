@@ -1,0 +1,16 @@
+# Copy this text into an Atom editor and save the file.
+# Bring catwoman AND wonderwoman to the top of the list without the mouse
+# Send the joker to the bottom
+# hint: Visit the Edit menu Edit > Lines and find the keyboard shortcut
+
+Wonderwoman
+Catwoman
+Spiderman
+Superman
+Batman
+Hulk
+Flash
+Wolverine
+Underdog
+Robin
+Joker

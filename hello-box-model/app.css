@@ -1,0 +1,158 @@
+body, * {
+    font-family: “Comic Sans MS”, cursive, sans-serif;
+    /*font-size: 10pt;*/
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  border-bottom: 4px black solid;
+  text-align: center;
+}
+navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: orange;
+}
+div {
+  margin: 0 auto;
+  /*border: 5px solid black;*/
+  padding: 2px;
+}
+p {
+  font-size: .8em;
+}
+
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+#annoying-ad {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  top: 250px;
+  right: 50px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3000;
+}
+
+#annoying-ad button {
+  float: right;
+}
+
+
+.article-image {
+  position: relative;
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+.article {
+  margin: 1em 1.5em;
+  border-bottom: 1px black solid;
+}
+
+
+#container {
+    height: 100%;
+    width: 80%;
+    background-color: gray;
+    position: static;
+    /*margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 50px;*/
+    margin: 0 auto;
+
+}
+
+label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin: 10px;
+  font-variant: small-caps;
+}
+
+label input {
+  display: inline-block;
+}
+
+.square {
+  border-width: 5px;
+  border-style: double;
+  border-radius: 30px;
+  border-color: black;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  display: none;
+}
+.inline {
+  display: inline;
+  border: 1px solid red;
+}
+
+.block {
+  display: block;
+  border: 1px solid green;
+}
+
+.inline-block {
+  display: inline-block;
+  border: 1px solid blue;
+}
+
+#square1 {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+#square2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#square3 {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    float:left;
+}
+#square4 {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    /*margin: 0 auto;*/
+    left: 150px;
+    float: right;
+}
+
+
+
+
+
+
+
+
+#

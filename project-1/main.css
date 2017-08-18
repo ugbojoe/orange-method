@@ -1,0 +1,103 @@
+.blueBorder {
+  border: 2px solid blue;
+}
+li {
+  margin: 5px;
+  padding: 5px;
+}
+/*drop menu*/
+.select-container select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #cccccc;
+  background-color: #f96302;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  width: 40%;
+  margin-top: 22px;
+  min-height: 46px;}
+/*input text box*/
+  input {
+    outline: none;
+    box-sizing: border-box; }
+
+  .text-input-container input:not([type]),
+  .text-input-container input[type=text],
+  .text-input-container input[type=password],
+  .text-input-container input[type=email],
+  .text-input-container input[type=url],
+  .text-input-container input[type=time],
+  .text-input-container input[type=date],
+  .text-input-container input[type=datetime],
+  .text-input-container input[type=tel],
+  .text-input-container input[type=number],
+  .text-input-container input[type=search] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: #fbfbfb;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 18px;
+    color: #444444;
+    width: 60%;
+    margin-top: 22px;
+    min-height: 46px;
+  }
+/*Adding Blank Space Between Lines*/
+div:empty {
+  height: 1.5em;
+  line-height: 1.5;
+}
+/*Navigation Bar Fix At Bottom - Bootstrap*/
+.navbar-fixed-bottom {
+
+}
+.container {
+
+}
+.container-fluid {
+
+}
+/*TERTIARY BUTTON*/
+.button.tertiary, .button.tertiary:visited, .tertiary.loader-btn:visited, .tertiary.loader-btn {
+  background-color: transparent;
+  color: white;
+  box-shadow: none; }
+/*Small Button*/
+/*.button.sm, .sm.loader-btn,
+.button.primary.sm,
+.primary.sm.loader-btn,
+.button.tertiary.sm,
+.tertiary.sm.loader-btn {
+  font-size: 14px;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 12px;
+  background-color: transparent;
+  box-shadow: none;
+}*/
+.drop-list-columns {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    column-count: 3;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    column-gap: 40px;
+}
+/*Primary Button - Display Med*/
+.button.md, .md.loader-btn,
+.button.primary.md,
+.primary.md.loader-btn,
+.button.tertiary.md,
+.tertiary.md.loader-btn {
+  font-size: 16px;
+  line-height: 38px;
+  height: 38px;
+  padding: 0 15px;
+  width: 40%;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Sku Number Generation</title>
+  <link rel="stylesheet" href="lib/ux-styleguide/dist/ux-styleguide.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script async src="main.js"></script>
+  <script src="https://pages.github.homedepot.com/ux/ux-styleguide/dist/ux-styleguide.min.js"></script>
+</head>
+
+<body onload="initApp();">
+
+  <div class="header">
+    <div class="header-logo">
+      <i class="icon_homedepot"></i>
+    </div>
+    <div class="header-info">
+      <label class="product-info">Sku Generation</label>
+      <label class="user-info">User Name | Store #0000 | Atlanta, GA</label>
+    </div>
+    <div class="header-search">
+      <!-- <input type="search" placeholder="Search Here"/>
+      <i class="icon_search"></i> -->
+    </div>
+    <div class="header-actions">
+      <div><a href="index.html"><i class="icon_home"></i></a>Home</div>
+      <div><a href="autogen.html"><i class="icon_bell"></i></a>Auto Gen</div>
+      <div><a href="manualgen.html"><i class="icon_cart"></i></a>Manual Gen</div>
+      <div><a href="#"><i class="icon_print"></i></a>Print</div>
+      <div><a href="#"><i class="icon_file-upload"></i></a>Import</div>
+      <div><a href="#"><i class="icon_file-download"></i></a>Export</div>
+    </div>
+  </div>
+  <section>
+    <article>
+      <div class="content">
+        <h4>
+          Sku Generation for Integration Testing:
+
+          The goal is to provide the Integration Software Engineer to generate random sku numbers for testing purposes. The application can generate any quantity of skus. The user can also generate skus manually one by one. This will help to support a common suite of E2E automated (transactions/functions) test scripts across enterprise portfolios. The hope is to increase the speed of Integration testing by providing the ability to generate varying quantities of test data on demand.
+        </h4>
+        <h4>
+          The tool will enable delivery of test data solutions to Software Engineering testing teams increasing efficiency of Integration testing lifecycle.
+        </h4>
+          <div class="skuworkflow">
+              <img src="images/skustoreworkflow.png" alt="Sku Creation Workflow" width="30%" height="30%" />
+          </div>
+      </div>
+    </article>
+    <nav>
+      <h3>Sku Number Auto Generation</h3>
+      <h5>
+        <ol>
+          <li>Select AutoGen to generate random skus</li>
+          <li>Select ManualGen to enetr skus manually</li>
+          <li>Select Import to upload existing skus</li>
+          <li>Select Export to download generated skus</li>
+        </ol>
+      </h5>
+    </nav>
+      <aside>
+        <h4>
+          <ul>
+            Store
+            <p>Sku number generation app will
+              <p>-RO(Regular Order)</p>
+              <p>-Carry Out/Pick Up</p>
+              <p>-Will Call</p>
+              <p>-Delivery</p>
+              <p>-Installer + Installer Will Call</p>
+            </p>
+          </ul>
+        </h4>
+      </aside>
+    </section>
+  </body>
+</html>

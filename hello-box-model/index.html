@@ -1,0 +1,74 @@
+
+  <!DOCTYPE html>
+  <html lang=“en”>
+
+  <head>
+    <meta charset=“UTF-8">
+    <link rel=“stylesheet” type=“text/css” href=“app.css”>
+    <title>CSS Box Model</title>
+
+    <script>
+      window.onload = function () {
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById(“date”).innerHTML = m + “/” + d + “/” + y;
+
+        document.getElementById(“ad-close”).addEventListener(“click”, function() {
+          document.getElementById(“annoying-ad”).style = “display: none;“;
+        });
+        // console.log(dateHeader);
+      }
+    </script>
+  </head>
+
+  <body class=“”>
+    <navbar>
+      <a href=“#”>Home</a>
+      <a href=“#Articles”>Articles</a>
+    </navbar>
+
+    <div id=“container”>
+      <header>
+        <h1>Chelsea FC</h1>
+        <h2>Chelsea Transfer Update!</h2>
+        <h4 id=“date”></h4>
+      </header>
+
+      <section>
+        <div class=‘article’>
+
+          <img> class=‘article-image’ src=“http://www.chelseafc.com/content/cfc/en/homepage/news/boilerplate-config/latest-news/2017/07/bakayoko-is-a-blue.img.png“ alt="Bakayoko is a Blue" style="width:304px;height:228px;">
+        <h4>Article Heading</h4>
+        <p>Tiemoue Bakayoko is a Chelsea player having today completed a transfer from Monaco.
+
+Bakayoko, 22, is a tall, strong and quick central midfielder who was instrumental in Monaco’s Ligue 1 triumph last season, as well as their impressive run to the Champions League semi-finals.
+
+He recently made his debut for France in the same line-up as new team-mate N’Golo Kante, and is widely recognised as one of the best young central midfielders in European football.
+
+Bakayoko, who has signed a five-year contract and will wear the No.14 shirt, said: ‘I am very happy to be here and to join this great team. I have grown up watching Chelsea. Signing was the natural thing for me because it is a club I loved very much in my childhood.
+
+‘I am now looking forward to evolving under this fantastic coach and alongside so many great team-mates.’</p>
+      </div>
+    </section>
+    <section>
+      <div class=‘article’>
+        <img class=‘article-image’ src=““>
+        <h4>Article Heading</h4>
+        <p></p>
+      </div>
+
+      <div id=“annoying-ad”>
+        <button id=“ad-close”>X</button>
+        Here’s an annoying ad.
+      </div>
+
+    </section>
+
+
+
+  </div>
+</body>
+
+</html>

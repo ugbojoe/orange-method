@@ -1,0 +1,10 @@
+{
+  "name": "leap-year",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chi": "^0.0.10",
+    "mocha": "^3.5.0"
+  }
+}

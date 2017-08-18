@@ -1,0 +1,49 @@
+{
+    "name": "ux-styleguide",
+    "version": "2.0.0",
+    "description": "Global compilation of all available UX CSS packages",
+    "main": "index.js",
+    "scripts": {
+        "start": "NODE_ENV=production node server.js --use_strict",
+        "prepublish": "gulp"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.homedepot.com/ux/ux-styleguide.git"
+    },
+    "keywords": [
+        "ux",
+        "styleguide"
+    ],
+    "homepage": "https://ux-styleguide.apps-np.homedepot.com",
+    "author": {
+        "name": "Matthew McElhaney",
+        "email": "matthew_mcelhaney@homedepot.com"
+    },
+    "private": false,
+    "license": "The Home Depot",
+    "publishConfig": {
+        "registry": "https://bower.artifactory.homedepot.com/artifactory/api/npm/npm-local"
+    },
+    "dependencies": {
+        "compression": "^1.6.2",
+        "express": "^4.14.0"
+    },
+    "devDependencies": {
+        "clean-css": "^3.4.19",
+        "gulp": "^3.9.1",
+        "gulp-bump": "^2.4.0",
+        "gulp-clean-css": "^2.0.12",
+        "gulp-concat": "^2.6.0",
+        "gulp-sass": "^2.3.2",
+        "gulp-uglify": "^2.0.1",
+        "ux-core-styles": "^2.0.0",
+        "ux-inputs": "^2.0.0",
+        "ux-layouts": "^2.0.1",
+        "ux-loader-button": "^1.0.3",
+        "ux-messaging": "^2.0.2",
+        "ux-navigation": "^3.0.0",
+        "ux-progress-indicator": "^1.0.2",
+        "ux-tables": "^1.0.2"
+    }
+}

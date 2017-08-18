@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  h1 cars
+  button
+  a(href="/cars/new") Add
+  ul
+  - cars.forEach( car =>{
+    li
+    a(href=`/cars/${car.id}`) #{car.make} - #{car.model} - #{car.color}
+  -});

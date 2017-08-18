@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Sku Number Generation</title>
+  <link rel="stylesheet" href="lib/ux-styleguide/dist/ux-styleguide.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script async src="main.js"></script>
+  <script src="https://pages.github.homedepot.com/ux/ux-styleguide/dist/ux-styleguide.min.js"></script>
+</head>
+
+<body onload="initApp();">
+
+<div class="header">
+  <div class="header-logo">
+    <i class="icon_homedepot"></i>
+  </div>
+  <div class="header-info">
+    <label class="product-info">Sku Generation</label>
+    <label class="user-info">User Name | Store #0000 | Atlanta, GA</label>
+  </div>
+  <div class="header-search">
+
+  </div>
+  <div class="header-actions">
+    <div><a href="index.html"><i class="icon_home"></i></a>Home</div>
+    <div class="active"><a href="autogen.html"><i class="icon_bell"></i></a>Auto Gen</div>
+    <div><a href="manualgen.html"><i class="icon_cart"></i></a>Manual Gen</div>
+    <div><a href="#"><i class="icon_print"></i></a>Print</div>
+    <div><a href="#"><i class="icon_file-upload"></i></a>Import</div>
+    <div><a href="#"><i class="icon_file-download"></i></a>Export</div>
+  </div>
+</div>
+<section>
+  <article>
+    <div class="content">
+      <!-- <div class="simple-flex"></div> -->
+      <h3>Enter the quantity of skus needed</h3>
+
+        <div class="text-input-container">
+        <!-- input field -->
+          <input id="input" type="number" placeholder="# of skus" />
+
+          <p>Click the Generate Sku button to display random skus between 1040000000 and 1049999999</p>
+          <!-- generate button -->
+          <button input id="btn" onclick="skuRnd()" class="button primary medium">Generate Sku(s)</button>
+          <!-- <ol id="output"></ol> -->
+
+          <div class="autosplashimg">
+              <!-- <img src="images/whitematrix.png" "images/handtypingbkdinv.png" alt="autogensplashimage" width="30%" height="30%" /> -->
+              <img src="images/handtypingbkdinv.png" alt="autogensplashimage" width="30%" height="30%" />
+          </div>
+        </div>
+    </div>
+  </article>
+      <nav>
+        <h3>Auto Generation Of Skus</h3>
+        <h5>
+          <p>Enter number of sku's you wish to generate</p>
+          <ol>
+            <li>Enter the number of skus needed</li>
+            <li>Generate 10 digit random skus starting with 104x</li>
+          </ol>
+        </h5>
+      </nav>
+  <!-- <div class="auto-asside"> -->
+    <aside>
+      <h3>Sku Length: 10 Digits</h3>
+      <ol id="output"></ol>
+    </aside>
+  <!-- </div> -->
+  </section>
+<!-- </div> -->
+</body>
+
+</html>

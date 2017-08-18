@@ -1,0 +1,83 @@
+# Kitchen Organizer
+
+This exercise will help you practice the UNIX / BASH commands for managing the file system files and directories.
+
+## Prerequisites
+
+* Starting a *Terminal* session
+* Basic understanding of how the UNIX file system organizes files and directories
+* Familiarity with the following commands: `ls`, `mv`,  `cp`, `rm`, `touch` and `mkdir`
+
+## Setup
+
+Clone the starter repository and switch into the working directory:
+
+```bash
+cd ~/orange-method
+git clone https://github.homedepot.com/OrangeMethod/kitchen-organizer.git
+cd kitchen-organizer
+```
+
+## Goal
+
+Using `mv`, `cp`, `rm`, `touch` and `mkdir`, reorganize the kitchen in as few steps as possible!
+
+
+### Start Here
+
+Your working directory will look like this in the beginning...
+
+```
+.
+├── kitchen
+│   ├── cans.txt
+│   ├── fridge
+│   │   ├── diapers.txt
+│   │   ├── freezer
+│   │   │   ├── couch.txt
+│   │   │   ├── frozenpeas.txt
+│   │   │   └── icecream.txt
+│   │   ├── milk.txt
+│   │   └── trashcan
+│   │       ├── banana-peels.txt
+│   │       ├── chicken-bones.txt
+│   │       ├── egg-shells.txt
+│   │       └── sink
+│   │           ├── clean-dishes.txt
+│   │           ├── delete-me.txt
+│   │           └── dirty-dishes.txt
+│   └── pantry
+│       ├── cans.txt
+│       ├── cereal.txt
+│       └── crisper-drawer
+│           └── lettuce.txt
+```
+
+### End Here
+
+When you're done running your terminal commands, it should look like this...
+
+```
+kitchen/
+├── fridge/
+│   ├── crisper-drawer/
+│   │   ├── apples.txt
+│   │   └── lettuce.txt
+│   ├── freezer/
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry/
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink/
+│   ├── dirty-dishes.txt
+│   └── drying-rack/
+│       └── clean-dishes.txt
+└── trashcan/
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+```
+
+TIP: Use the `tree` command to inspect the `kitchen` directory and its child directories.

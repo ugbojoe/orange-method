@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Project 1 - Sku Data Generation</title>
+  <link rel="stylesheet" href="lib/ux-styleguide/dist/ux-styleguide.min.css">
+  <link href="https://pages.github.homedepot.com/ux/uxicon/uxicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script async src="main.js"></script>
+</head>
+
+<body onload="initApp();">
+  <header class="header">
+    <div class="header-logo">
+      <i class="icon_homedepot"></i>
+    </div>
+    <div class="header-info">
+      <label class="product-info">Dummy Data Generator</label>
+      <label class="user-info">Client Name | Dept #00 | City, State</label>
+    </div>
+    <div class="header-search">
+
+    </div>
+    <div class="header-actions">
+      <div><i class="icon_file-upload"></i>Import</div>
+      <div><i class="icon_file-download"></i>Export</div>
+      <div><i class="icon_print"></i>Print</div>
+    </div>
+  </header>
+  <h1>Auto Sku Generation</h1>
+
+  <main class="content">
+    <!-- Left Navigation and Content -->
+    <section class="content-area">
+      <!-- Side Navigation -->
+      <nav>
+        <div class="navigation-wrapper">
+          <div class="sidenav scrollable">
+            <ul class="nav">
+
+              <li><a href="index.html"><i class="icon_nav_dashboard"></i>Home</a></li>
+              <li><a href="autogen.html"><i class="icon_nav_esvs"></i>Auto Generation</a></li>
+              <li><a href="manualgen.html"><i class="icon_nav_quote_center"></i>Manual Generation</a></li>
+
+            </ul>
+          </div>
+
+          <div class="empty"></div>
+
+          <div class="drop-list-columns">
+            <div class="select-container">
+              <select id="select1" name="select1" title="Default Select">
+                <option value=""selected>Select</option>
+                <optgroup label="Options Available">
+                  <option value="1">10 digits</option>
+
+                </select>
+
+
+              <label for="select1">Sku Length:</label>
+            </div>
+
+            <div class="text-input-container">
+              <!-- <input type="text" id="skuquantity" placeholder="Generate skus" onkeypress="return genSku(event)" name="skuquantity" title="Sku Quantity" /> -->
+              <input type="text" id="autoGen" placeholder="Generate skus" onkeypress="return genSku(event)" name="skuquantity" title="Sku Quantity" />
+              <label for="Sku Quantity">Sku Quantity</label>
+            </div>
+            <p id="sku"></p>
+
+            <div class="select-container">
+              <select id="select2" name="select2" title="Default Select">
+                  <option value=""selected>Select</option>
+                  <optgroup label="Options Available">
+                    <option value="1">10 sku's</option>
+                    <option value="2">20 sku's</option>
+                    <option value="3">30 sku's</option>
+                    <option value="4">40 sku's</option>
+                    <option value="5">50 sku's</option>
+                    <option value="6">60 sku's</option>
+                    <option value="7">70 sku's</option>
+                    <option value="8">80 sku's</option>
+                    <option value="9">90 sku's</option>
+                    <option value="10">100 sku's</option>
+                  </select>
+              <label for="select2">Results per Page</label>
+              <button onclick="skuRnd()" class="button primary medium">Display Sku(s)</button>
+
+            </div>
+          </div>
+      </nav>
+  </main>
+</body>
+</html>

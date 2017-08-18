@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  h1 Add Car
+  form(action='/cars' method='POST')
+    | Make:
+    br
+    input(type='text', name='make')
+    br
+    | Model:
+    br
+    input(type='text', name='model')
+    br
+    | Color:
+    br
+    input(type='text', name='color')
+    br
+    br
+    input(type='submit', value='Submit')

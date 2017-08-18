@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+  h1 Cars
+  section
+    form(action='/cars' method='GET')
+      | Color:
+      br
+      input(type='text', name='color', value=`${color}`)
+      button
+        a(href='/cars') Clear
+      br
+      br
+      input(type='submit', value='Submit')
+  button
+    a(href="/cars/new") Add
+  ul
+    - cars.forEach( car => {
+      li
+        a(href=`/cars/${car.id}`) #{car.make} - #{car.model} - #{car.color}
+        button
+          a(href=`/cars/${car.id}?_method=delete`) X
+    - });

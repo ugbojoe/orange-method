@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+  h1 Edit Car
+  form(action=`/cars/${car.id}?_method=put` method='POST')
+    | Make:
+    br
+    input(type='text', name='make' value=`${car.make}`)
+    br
+    | Model:
+    br
+    input(type='text', name='model' value=`${car.model}`)
+    br
+    | Color:
+    br
+    input(type='text', name='color' value=`${car.color}`)
+    br
+    br
+    input(type='submit', value='Submit')

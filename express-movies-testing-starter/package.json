@@ -1,0 +1,43 @@
+{
+  "name": "express-movies",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "^8.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/www",
+    "dev": "PORT=3001 DEBUG=express-movies:* NODE_ENV=development nodemon --inspect ./bin/www",
+    "migrate": "knex migrate:latest",
+    "seeds": "NODE_ENV=development node seeds/bookshelf/dev/movies.js",
+    "migrate-test": "knex --env test migrate:latest",
+    "seeds-test": "NODE_ENV=test node seeds/bookshelf/dev/movies.js",
+    "tester": "NODE_ENV=test mocha \"routes/*.test.js\"",
+    "test": "yarn seeds-test && concurrently -k \"NODE_ENV=test PORT=3002 node ./bin/www\" \"yarn tester\"",
+    "lint": "yarn eslint ."
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "bookshelf": "^0.10.3",
+    "cfenv": "^1.0.4",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "knex": "^0.13.0",
+    "morgan": "~1.7.0",
+    "mysql": "^2.13.0",
+    "pg": "^6.4.0",
+    "pug": "~2.0.0-beta6",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "concurrently": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0"
+  }
+}
